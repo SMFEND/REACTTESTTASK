@@ -1,0 +1,31 @@
+.App {
+    margin: 0 auto;
+}
+#contentHolder{
+position:relative;
+}
+
+header, footer {
+    background: none repeat scroll 0 0 #CCFFFF;
+    color: #000000;
+    height: 80px;
+    width: 1000px;
+    clear:both;
+    font-size:3em;
+    text-align:center;
+    padding-top:20px;
+}
+.sidebar {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border-color: #CCCCCC #BBBBBB #888888;
+    border-style: solid;
+    border-width: 1px 2px 2px 1px;
+    margin-bottom: 3px;
+    position: absolute;
+    top: 0;
+    width: 160px;
+}
+.leftsidebarfixed {
+    position: fixed;
+    top: 0;
+}
