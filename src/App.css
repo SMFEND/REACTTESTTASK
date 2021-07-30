@@ -51,6 +51,18 @@ table th:nth-child(1) {
   font-size: 10px;
   align-items: center;
   justify-content: center;
+  cursor: default;
+  flex-direction: column;
+}
+
+@media (max-height: 680px) {
+  .sidebar {
+    font-size: 7px;
+  }
+}
+
+.sidebar > * {
+  padding: 0 15px;
 }
 
 header {
@@ -63,8 +75,25 @@ header {
   color: white;
   z-index: 3;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
+}
+
+header > h2 {
+  flex-grow: 0.2;
+  text-transform: capitalize;
+  cursor: default;
+}
+
+header > a {
+  color: white;
+  text-decoration: none;
+}
+
+header > a:hover {
+  color: rgb(47, 171, 209);
+  text-decoration: none;
+  transition: all 0.2s;
 }
 
 footer {
@@ -76,6 +105,7 @@ footer {
   background-color: rgb(37, 37, 37);
   color: white;
   text-align: center;
+  cursor: default;
 }
 
 .search {
@@ -85,12 +115,13 @@ footer {
   justify-content: center;
   background-color: rgb(71, 71, 71);
   height: 35px;
+  cursor: default;
 }
 
 .search > input {
   margin-left: 10px;
   margin-top: 1px;
-  
+  cursor: auto;
 }
 
 .search > input:focus {
